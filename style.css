@@ -3,6 +3,7 @@ body{
 }
 .wrapper{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -21,4 +22,18 @@ body{
     50%{transform: rotate(0deg);}
     75%{transform: rotate(2deg);}
     100%{transform: rotate(0deg);}
+}
+.password{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    border-radius: 20px;
+    border: 4px outset gray;
+    overflow: hidden;
+}
+.password p{
+    margin: 0;
+    width: 80%;
 }
