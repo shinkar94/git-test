@@ -1,0 +1,24 @@
+body{
+    background-image: linear-gradient(45deg, black 0%, white 100%);
+}
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    color: burlywood;
+    font-size: 48px;
+    font-family: fantasy;
+    text-shadow: 0px 10px 30px rgb(37, 36, 36);
+}
+.wrapper h1:hover{
+    animation: dv1 1s linear 0s forwards;
+}
+@keyframes dv1{
+    0%{transform: rotate(0deg);}
+    25%{transform: rotate(-2deg);}
+    50%{transform: rotate(0deg);}
+    75%{transform: rotate(2deg);}
+    100%{transform: rotate(0deg);}
+}
