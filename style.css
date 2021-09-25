@@ -103,6 +103,17 @@ body {
   border-radius: 5px;
   width: 60%;
 }
+.wrapper .password .go {
+  margin-top: 5px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#978445), to(black));
+  background: linear-gradient(0deg, #978445 0%, black 100%);
+  border-radius: 10px;
+  color: #ecd790;
+  cursor: pointer;
+}
+.wrapper .password .go:hover {
+  border: 2px outset #ecd790;
+}
 @-webkit-keyframes pasOpacty {
   0% {
     opacity: 0;
