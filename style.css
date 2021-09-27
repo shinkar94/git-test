@@ -26,6 +26,60 @@ body {
   text-shadow: 0px 10px 30px #252424;
   background-image: linear-gradient(45deg, black 0%, white 100%);
 }
+.wrapper .hed {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: black;
+  -webkit-transition: 0.3s ease-out;
+  transition: 0.3s ease-out;
+  visibility: hidden;
+  -webkit-box-shadow: 0px 1px 10px #31c731;
+          box-shadow: 0px 1px 10px #31c731;
+  padding-bottom: 4px;
+}
+.wrapper .hed .leb {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: red;
+  color: #000;
+  text-shadow: 0px 10px 30px #252424;
+  font-family: "Black Ops One", cursive;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  font-size: 19px;
+  background: linear-gradient(45deg, #31c731 0%, #befad5 100%);
+}
+.wrapper .hed a {
+  text-decoration: none;
+  color: burlywood;
+  font-family: "Black Ops One", cursive;
+  font-size: 24px;
+  -webkit-transition: 0.8s ease-out;
+  transition: 0.8s ease-out;
+}
+.wrapper .hed a:hover {
+  -webkit-text-decoration: underline #31c731;
+          text-decoration: underline #31c731;
+}
 .wrapper .password {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -286,9 +340,18 @@ body {
     -webkit-transform: translateY(-10%) scale(0.65);
             transform: translateY(-10%) scale(0.65);
   }
+  95% {
+    -webkit-transform: translateY(-275%) scale(0.3);
+            transform: translateY(-275%) scale(0.3);
+  }
+  99% {
+    -webkit-transform: translateY(-275%) scale(0.3);
+            transform: translateY(-275%) scale(0.3);
+  }
   100% {
-    -webkit-transform: translateY(-272%) scale(0.3);
-            transform: translateY(-272%) scale(0.3);
+    -webkit-transform: translateY(-275%) scale(0.3);
+            transform: translateY(-275%) scale(0.3);
+    visibility: hidden;
   }
 }
 @keyframes chekDvig {
@@ -300,9 +363,18 @@ body {
     -webkit-transform: translateY(-10%) scale(0.65);
             transform: translateY(-10%) scale(0.65);
   }
+  95% {
+    -webkit-transform: translateY(-275%) scale(0.3);
+            transform: translateY(-275%) scale(0.3);
+  }
+  99% {
+    -webkit-transform: translateY(-275%) scale(0.3);
+            transform: translateY(-275%) scale(0.3);
+  }
   100% {
-    -webkit-transform: translateY(-272%) scale(0.3);
-            transform: translateY(-272%) scale(0.3);
+    -webkit-transform: translateY(-275%) scale(0.3);
+            transform: translateY(-275%) scale(0.3);
+    visibility: hidden;
   }
 }
 @-webkit-keyframes LBLcenter {
@@ -325,5 +397,27 @@ body {
   }
   100% {
     font-size: 64px;
+  }
+}
+@-webkit-keyframes hedVisabiliti {
+  0% {
+    visibility: hidden;
+  }
+  50% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
+}
+@keyframes hedVisabiliti {
+  0% {
+    visibility: hidden;
+  }
+  50% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
   }
 }
